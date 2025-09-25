@@ -89,14 +89,12 @@ body {
   transform: scaleX(0);
   background-color: theme('colors.neutral.800');
   transition: transform 300ms cubic-bezier(0.65, 0.05, 0.36, 1);
+  background-color: white;
 }
 
 .nav-hover-btn:hover::after {
   transform-origin: bottom left;
   transform: scaleX(1);
-}
-
-.dark .nav-hover-btn::after {
   background-color: white;
 }
 
@@ -265,6 +263,10 @@ body {
   border-radius: 9999px;
   background-color: white;
   transition: all 200ms ease-in-out;
+}
+
+.indicator-line:hover {
+  cursor: pointer;
 }
 
 .indicator-line.active {
